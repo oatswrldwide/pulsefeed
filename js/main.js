@@ -12,12 +12,39 @@ class PulseFeedApp {
         this.isAdmin = false;
         this.realtimeSubscriptions = [];
         
-        // Demo data for initial load
-        this.initializeDemoData();
+        // Load saved data or initialize demo data
+        this.loadData();
         this.initializeAnimations();
         this.setupEventListeners();
     }
 
+    // Load data from localStorage or initialize demo data
+    loadData() {
+        const savedPosts = localStorage.getItem('pulsefeed_posts');
+        const savedSettings = localStorage.getItem('pulsefeed_settings');
+        
+        if (savedPosts) {
+            // Load saved posts and convert date strings back to Date objects
+            this.posts = JSON.parse(savedPosts).map(post => ({
+                ...post,
+                created_at: new Date(post.created_at)
+            }));
+        } else {
+            // Initialize with demo data if nothing saved
+            this.initializeDemoData();
+        }
+        
+        if (savedSettings) {
+            this.settings = JSON.parse(savedSettings);
+        }
+    }
+    
+    // Save data to localStorage
+    saveData() {
+        localStorage.setItem('pulsefeed_posts', JSON.stringify(this.posts));
+        localStorage.setItem('pulsefeed_settings', JSON.stringify(this.settings));
+    }
+    
     // Initialize demo data for realistic testing
     initializeDemoData() {
         const demoPosts = [
@@ -355,6 +382,9 @@ class PulseFeedApp {
         // Add to posts array
         this.posts.unshift(newPost);
         
+        // Save to localStorage
+        this.saveData();
+        
         // Clear form
         form.reset();
         
@@ -376,6 +406,7 @@ class PulseFeedApp {
         const post = this.posts.find(p => p.id === postId);
         if (post) {
             post.reactions[reaction] = (post.reactions[reaction] || 0) + 1;
+            this.saveData();
             this.renderPosts();
             
             // Animate reaction
@@ -469,7 +500,6 @@ class PulseFeedApp {
                             <span class="text-sm font-medium text-gray-900">Anonymous</span>
                             <span class="text-sm text-gray-500">•</span>
                             <span class="text-sm text-gray-500">${this.formatTimestamp(post.created_at)}</span>
-                            <span class="text-xs px-2 py-1 rounded-full ${sentimentColor} bg-opacity-10 ${sentimentColor.replace('text-', 'bg-')}">${post.sentiment}</span>
                         </div>
                         <p class="text-gray-800 mb-3 leading-relaxed">${post.content}</p>
                         ${post.tags.length > 0 ? `

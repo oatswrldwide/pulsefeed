@@ -431,7 +431,7 @@
     </footer>
     
     <!-- JavaScript -->
-    <script src="main.js"></script>
+    <script src="../js/main.js"></script>
     
     <script>
         // Admin Dashboard specific functionality
@@ -783,6 +783,7 @@
                     window.app.posts = window.app.posts.filter(p => p.id !== postId);
                     adminDashboard.renderModerationTable();
                     adminDashboard.updateMetrics();
+                    window.app.saveData();
                     window.app.showNotification('Post deleted successfully!', 'success');
                 }
             }
@@ -803,6 +804,7 @@
             adminDashboard.selectedPosts.clear();
             adminDashboard.renderModerationTable();
             adminDashboard.updateMetrics();
+            window.app.saveData();
             window.app.showNotification(`${selected.length} posts approved!`, 'success');
         }
         
@@ -821,6 +823,7 @@
             adminDashboard.selectedPosts.clear();
             adminDashboard.renderModerationTable();
             adminDashboard.updateMetrics();
+            window.app.saveData();
             window.app.showNotification(`${selected.length} posts flagged!`, 'warning');
         }
         
@@ -836,6 +839,7 @@
                 adminDashboard.selectedPosts.clear();
                 adminDashboard.renderModerationTable();
                 adminDashboard.updateMetrics();
+                window.app.saveData();
                 window.app.showNotification(`${selected.length} posts deleted!`, 'success');
             }
         }

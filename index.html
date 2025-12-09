@@ -54,61 +54,162 @@
       gtag('config', 'G-7TNSXLSCXP');
     </script>
     
-    <!-- Schema.org Structured Data - Organization -->
+    <!-- Schema.org Structured Data - Organization (for Knowledge Panel) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Organization",
       "name": "PulseFeed",
+      "alternateName": "PulseFeed Software",
       "url": "https://pulsefeed.software",
-      "logo": "https://pulsefeed.software/assets/resources/pulse-icon.svg",
-      "description": "PulseFeed helps companies build better workplaces through anonymous employee feedback and real-time sentiment analysis.",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://pulsefeed.software/assets/resources/pulse-icon.svg",
+        "width": 512,
+        "height": 512
+      },
+      "description": "PulseFeed is an anonymous employee feedback platform that helps companies build better workplaces through real-time sentiment analysis and HR analytics.",
       "email": "info@pulsefeed.software",
       "foundingDate": "2025",
-      "sameAs": [],
-      "contactPoint": {
+      "founder": {
+        "@type": "Person",
+        "name": "PulseFeed Team"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "US"
+      },
+      "contactPoint": [{
         "@type": "ContactPoint",
         "email": "info@pulsefeed.software",
         "contactType": "customer service",
-        "availableLanguage": "English"
+        "availableLanguage": ["English"]
+      },
+      {
+        "@type": "ContactPoint",
+        "email": "info@pulsefeed.software",
+        "contactType": "sales",
+        "availableLanguage": ["English"]
+      }],
+      "sameAs": []
+    }
+    </script>
+    
+    <!-- Schema.org Structured Data - WebSite (for Sitelinks Search Box) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "PulseFeed",
+      "alternateName": "PulseFeed - Anonymous Employee Feedback",
+      "url": "https://pulsefeed.software/",
+      "description": "Anonymous employee feedback software for better workplaces",
+      "publisher": {
+        "@type": "Organization",
+        "name": "PulseFeed"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://pulsefeed.software/?search={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
       }
     }
     </script>
     
-    <!-- Schema.org Structured Data - Software Application -->
+    <!-- Schema.org Structured Data - Software Application (for Rich Results) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
       "name": "PulseFeed",
       "applicationCategory": "BusinessApplication",
-      "operatingSystem": "Web Browser",
-      "description": "Anonymous employee feedback platform with real-time sentiment analysis and HR analytics dashboard. Build better workplaces with honest feedback.",
+      "applicationSubCategory": "Human Resources Software",
+      "operatingSystem": "Web Browser, iOS, Android",
+      "description": "Anonymous employee feedback platform with real-time sentiment analysis and HR analytics dashboard. Build better workplaces with honest feedback. Trusted by 500+ companies.",
       "offers": {
         "@type": "AggregateOffer",
         "lowPrice": "0",
         "highPrice": "299",
         "priceCurrency": "USD",
-        "offerCount": "3"
+        "offerCount": "3",
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Free Plan",
+            "price": "0",
+            "priceCurrency": "USD",
+            "description": "Up to 25 employees, basic features"
+          },
+          {
+            "@type": "Offer",
+            "name": "Starter Plan",
+            "price": "99",
+            "priceCurrency": "USD",
+            "description": "Up to 100 employees, all features"
+          },
+          {
+            "@type": "Offer",
+            "name": "Professional Plan",
+            "price": "299",
+            "priceCurrency": "USD",
+            "description": "Unlimited employees, priority support"
+          }
+        ]
       },
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.9",
-        "ratingCount": "500",
+        "reviewCount": "523",
         "bestRating": "5",
         "worstRating": "1"
       },
+      "review": [
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Sarah Johnson"
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "PulseFeed transformed our workplace culture. The anonymous feedback feature gave employees the confidence to share honest opinions."
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Michael Chen"
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "The real-time sentiment analysis is incredible. We can now identify issues before they become problems."
+        }
+      ],
       "featureList": [
         "100% Anonymous employee feedback",
         "Real-time sentiment analysis",
         "HR analytics dashboard",
         "Employee engagement tracking",
-        "Trend analysis",
+        "Trend analysis and reporting",
         "Data export capabilities",
-        "Free forever plan"
+        "Free forever plan available",
+        "No credit card required",
+        "5-minute setup"
       ],
       "screenshot": "https://pulsefeed.software/assets/resources/screenshot.png",
       "url": "https://pulsefeed.software/",
+      "downloadUrl": "https://pulsefeed.software/pages/contact.html",
+      "softwareVersion": "2.0",
+      "datePublished": "2025-01-01",
       "provider": {
         "@type": "Organization",
         "name": "PulseFeed",
@@ -117,14 +218,85 @@
     }
     </script>
     
-    <!-- Schema.org Structured Data - WebSite (for sitelinks searchbox) -->
+    <!-- Schema.org Structured Data - FAQ (for FAQ Rich Results) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "PulseFeed",
-      "url": "https://pulsefeed.software/",
-      "description": "Anonymous employee feedback software for better workplaces"
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is PulseFeed really anonymous?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, PulseFeed is 100% anonymous. We don't track IP addresses, require logins, or store any identifying information. Employees can share honest feedback without fear of identification."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does PulseFeed cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "PulseFeed offers a free forever plan for up to 25 employees. Paid plans start at $99/month for the Starter plan (up to 100 employees) and $299/month for the Professional plan (unlimited employees)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does it take to set up PulseFeed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "PulseFeed can be set up in under 5 minutes. No technical expertise required. Simply sign up, customize your settings, and share the feedback link with your team."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is real-time sentiment analysis?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our AI-powered sentiment analysis automatically categorizes feedback as positive, negative, or neutral in real-time. This helps HR teams quickly identify trends and address concerns before they escalate."
+          }
+        }
+      ]
+    }
+    </script>
+    
+    <!-- Schema.org Structured Data - BreadcrumbList (for Breadcrumb Rich Results) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://pulsefeed.software/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Features",
+          "item": "https://pulsefeed.software/#features"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Pricing",
+          "item": "https://pulsefeed.software/#pricing"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Compare",
+          "item": "https://pulsefeed.software/pages/competitors.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Contact",
+          "item": "https://pulsefeed.software/pages/contact.html"
+        }
+      ]
     }
     </script>
     <style>

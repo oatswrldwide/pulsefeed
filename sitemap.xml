@@ -6,7 +6,7 @@
 
   <!-- Landing Page -->
   <url>
-    <loc>https://oatswrldwide.github.io/pulsefeed/</loc>
+    <loc>https://pulsefeed.software/</loc>
     <lastmod>2025-12-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -14,7 +14,7 @@
 
   <!-- Employee Portal -->
   <url>
-    <loc>https://oatswrldwide.github.io/pulsefeed/pages/employee.html</loc>
+    <loc>https://pulsefeed.software/pages/employee.html</loc>
     <lastmod>2025-12-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -22,7 +22,7 @@
 
   <!-- Admin Dashboard (noindex, but in sitemap for completeness) -->
   <url>
-    <loc>https://oatswrldwide.github.io/pulsefeed/pages/admin.html</loc>
+    <loc>https://pulsefeed.software/pages/admin.html</loc>
     <lastmod>2025-12-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>

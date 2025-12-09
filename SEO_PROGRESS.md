@@ -39,6 +39,11 @@
 
 ### 1. Google Search Console Setup (15 minutes)
 
+
+
+
+
+
 **Step 1: Verify Your Site**
 1. Go to: https://search.google.com/search-console
 2. Click "Add Property" → Enter: `https://oatswrldwide.github.io/pulsefeed/`

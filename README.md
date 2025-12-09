@@ -303,8 +303,9 @@ This project is provided as-is for demonstration purposes.
 ## 📞 Support
 
 For support, questions, or feature requests:
+- **Email**: info@pulsefeed.software
+- **Website**: https://pulsefeed.software
 - Open an issue on GitHub
-- Contact: [Your contact information]
 
 ---
 

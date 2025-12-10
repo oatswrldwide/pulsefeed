@@ -36,6 +36,22 @@
     <priority>0.9</priority>
   </url>
 
+  <!-- Blog Homepage -->
+  <url>
+    <loc>https://pulsefeed.software/blog/</loc>
+    <lastmod>2025-12-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Blog Article: Complete Guide to Anonymous Employee Feedback -->
+  <url>
+    <loc>https://pulsefeed.software/blog/complete-guide-anonymous-employee-feedback.html</loc>
+    <lastmod>2025-12-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
   <!-- Admin Dashboard (noindex, but in sitemap for completeness) -->
   <url>
     <loc>https://pulsefeed.software/pages/admin.html</loc>

@@ -541,69 +541,454 @@
 
             <h2 id="implementation">4. Step-by-Step Implementation Guide</h2>
 
-            <h3>Phase 1: Planning (Weeks 1-2)</h3>
+            <p>You've selected your platform. Now comes the critical part: implementation. A poorly executed rollout can doom even the best feedback system. This 8-week roadmap is based on successful implementations across 200+ organizations.</p>
 
-            <p><strong>Define Your Objectives:</strong></p>
+            <h3>Phase 1: Planning & Foundation (Weeks 1-2)</h3>
+
+            <h4>Week 1: Define Objectives & Build Your Team</h4>
+
+            <p><strong>Step 1: Articulate Your "Why"</strong></p>
+            
+            <p>Don't just say "we want feedback." Be specific about what you're trying to achieve:</p>
+
+            <div class="bg-blue-50 rounded-lg p-6 my-6">
+                <p class="font-semibold mb-3">✓ Good Objectives (SMART):</p>
+                <ul class="space-y-2">
+                    <li>• Reduce voluntary turnover from 22% to 15% by Q4 2026</li>
+                    <li>• Increase employee engagement score from 6.2 to 7.5 within 12 months</li>
+                    <li>• Identify and resolve 90% of HR issues before they escalate to formal complaints</li>
+                    <li>• Collect actionable feedback from 70% of employees quarterly</li>
+                    <li>• Improve manager effectiveness scores by 25% through feedback-driven coaching</li>
+                </ul>
+                
+                <p class="font-semibold mt-4 mb-3">✗ Vague Objectives (Avoid These):</p>
+                <ul class="space-y-2 text-gray-600">
+                    <li>• "Better communication"</li>
+                    <li>• "Improve culture"</li>
+                    <li>• "Listen to employees"</li>
+                </ul>
+            </div>
+
+            <p><strong>Step 2: Assemble Your Implementation Team</strong></p>
+
+            <p>Successful implementations require cross-functional buy-in. Your core team should include:</p>
+
+            <table class="min-w-full bg-white border my-6">
+                <thead class="bg-gray-100">
+                    <tr>
+                        <th class="py-2 px-4 border-b text-left">Role</th>
+                        <th class="py-2 px-4 border-b text-left">Responsibilities</th>
+                        <th class="py-2 px-4 border-b text-left">Time Commitment</th>
+                    </tr>
+                </thead>
+                <tbody class="text-sm">
+                    <tr>
+                        <td class="py-2 px-4 border-b font-medium">HR Lead</td>
+                        <td class="py-2 px-4 border-b">Day-to-day program owner, policy creation, response coordination</td>
+                        <td class="py-2 px-4 border-b">15-20 hrs/week initially</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4 border-b font-medium">Executive Sponsor</td>
+                        <td class="py-2 px-4 border-b">Secure budget, champion program, model transparency</td>
+                        <td class="py-2 px-4 border-b">2-3 hrs/week</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4 border-b font-medium">IT/Security Rep</td>
+                        <td class="py-2 px-4 border-b">Technical setup, security vetting, integration support</td>
+                        <td class="py-2 px-4 border-b">5-8 hrs during setup</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4 border-b font-medium">Communications Lead</td>
+                        <td class="py-2 px-4 border-b">Launch campaign, ongoing awareness, messaging strategy</td>
+                        <td class="py-2 px-4 border-b">10-12 hrs/week initially</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4 border-b font-medium">Employee Reps (3-5)</td>
+                        <td class="py-2 px-4 border-b">Ground-level perspective, pilot testers, peer advocates</td>
+                        <td class="py-2 px-4 border-b">2-4 hrs/week</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4 border-b font-medium">Legal Counsel</td>
+                        <td class="py-2 px-4 border-b">Policy review, compliance guidance, risk assessment</td>
+                        <td class="py-2 px-4 border-b">3-5 hrs during planning</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p><strong>Step 3: Conduct Pre-Implementation Assessment</strong></p>
+
+            <p>Before launching, understand your current state. Assess:</p>
             <ul>
-                <li>What specific problems are you trying to solve?</li>
-                <li>What metrics will you use to measure success?</li>
-                <li>Who are the key stakeholders?</li>
+                <li><strong>Trust Level:</strong> Anonymous pulse survey: "On a scale of 1-10, how comfortable do you feel speaking up about workplace issues?"</li>
+                <li><strong>Current Channels:</strong> What feedback mechanisms exist? How often are they used?</li>
+                <li><strong>Historical Issues:</strong> What problems have been swept under the rug?</li>
+                <li><strong>Manager Readiness:</strong> Are managers prepared to receive critical feedback without retaliation?</li>
+                <li><strong>Culture Baseline:</strong> Document current engagement scores, turnover rates, and sentiment</li>
             </ul>
 
-            <p><strong>Build Your Implementation Team:</strong></p>
+            <h4>Week 2: Technical Setup & Configuration</h4>
+
+            <p><strong>Platform Configuration Checklist:</strong></p>
+
+            <div class="bg-gray-50 border border-gray-200 rounded-lg p-6 my-6">
+                <ol class="space-y-3">
+                    <li><strong>1. Branding & Customization:</strong>
+                        <ul class="ml-6 mt-2 space-y-1 text-gray-700">
+                            <li>• Upload company logo and colors</li>
+                            <li>• Customize welcome message and instructions</li>
+                            <li>• Set organizational tone (formal vs. casual)</li>
+                        </ul>
+                    </li>
+                    <li><strong>2. Category Setup:</strong>
+                        <ul class="ml-6 mt-2 space-y-1 text-gray-700">
+                            <li>• Create feedback categories (e.g., Management, DEI, Compensation, Work-Life Balance, Safety)</li>
+                            <li>• Define routing rules (which categories alert which stakeholders)</li>
+                            <li>• Set up priority levels (urgent vs. routine)</li>
+                        </ul>
+                    </li>
+                    <li><strong>3. Notification Configuration:</strong>
+                        <ul class="ml-6 mt-2 space-y-1 text-gray-700">
+                            <li>• Real-time alerts for urgent issues to HR Lead + Executive Sponsor</li>
+                            <li>• Daily digest for routine feedback</li>
+                            <li>• Weekly summary reports for leadership</li>
+                        </ul>
+                    </li>
+                    <li><strong>4. Access Controls:</strong>
+                        <ul class="ml-6 mt-2 space-y-1 text-gray-700">
+                            <li>• Define who can view feedback (limit to need-to-know)</li>
+                            <li>• Set up role-based permissions</li>
+                            <li>• Create audit log for all admin actions</li>
+                        </ul>
+                    </li>
+                    <li><strong>5. Integration Setup:</strong>
+                        <ul class="ml-6 mt-2 space-y-1 text-gray-700">
+                            <li>• Connect to Slack/Teams if applicable</li>
+                            <li>• Set up single sign-on for admins</li>
+                            <li>• Test all integrations thoroughly</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+
+            <h3>Phase 2: Policy Development (Weeks 3-4)</h3>
+
+            <p>Your feedback policy is a sacred contract with employees. Break it, and you'll never regain trust. Here's what to include:</p>
+
+            <h4>The 7 Essential Policy Components:</h4>
+
+            <p><strong>1. Anonymity Guarantee (Be Explicit)</strong></p>
+            <blockquote>
+                "Feedback submitted through this system is 100% anonymous. We do not collect IP addresses, device IDs, email addresses, or any identifying information. Even HR cannot determine who submitted feedback. The only exception: if you voluntarily choose to identify yourself in your message, or if feedback contains specific details that only one person could know."
+            </blockquote>
+
+            <p><strong>2. Scope of Acceptable Feedback</strong></p>
+            <div class="grid md:grid-cols-2 gap-4 my-6">
+                <div class="bg-green-50 border border-green-200 rounded p-4">
+                    <p class="font-semibold text-green-900 mb-2">✓ Encouraged:</p>
+                    <ul class="text-sm text-green-800 space-y-1">
+                        <li>• Workplace concerns & suggestions</li>
+                        <li>• Management feedback</li>
+                        <li>• Policy questions or issues</li>
+                        <li>• Safety concerns</li>
+                        <li>• DEI issues</li>
+                        <li>• Process improvements</li>
+                        <li>• Harassment/discrimination reports</li>
+                    </ul>
+                </div>
+                <div class="bg-red-50 border border-red-200 rounded p-4">
+                    <p class="font-semibold text-red-900 mb-2">✗ Not Appropriate:</p>
+                    <ul class="text-sm text-red-800 space-y-1">
+                        <li>• Threats of violence</li>
+                        <li>• Defamatory statements</li>
+                        <li>• Confidential company information</li>
+                        <li>• Personal attacks unrelated to work</li>
+                        <li>• False accusations</li>
+                        <li>• Spam or pranks</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p><strong>3. Response Timeline Commitments</strong></p>
             <ul>
-                <li>HR Lead</li>
-                <li>IT/Security Representative</li>
-                <li>Executive Sponsor</li>
-                <li>Employee Representatives from different departments</li>
+                <li><strong>Urgent issues:</strong> Acknowledged within 24 hours, action plan within 72 hours</li>
+                <li><strong>Standard feedback:</strong> Acknowledged within 3 business days, response within 2 weeks</li>
+                <li><strong>Suggestions/ideas:</strong> Reviewed monthly, updates quarterly</li>
             </ul>
 
-            <h3>Phase 2: Platform Selection & Setup (Weeks 3-4)</h3>
+            <p><strong>4. Investigation Process (For Serious Allegations)</strong></p>
+            <p>Clearly outline how serious claims (harassment, discrimination, safety violations) will be investigated while maintaining anonymity:</p>
+            <ul>
+                <li>Independent investigator assigned</li>
+                <li>Two-way anonymous messaging for follow-up questions</li>
+                <li>No attempt to identify the reporter</li>
+                <li>Updates provided through the anonymous channel</li>
+                <li>Outcomes communicated (within legal constraints)</li>
+            </ul>
 
+            <p><strong>5. Non-Retaliation Policy (Make It Strong)</strong></p>
+            <blockquote>
+                "Attempting to identify anonymous feedback submitters is strictly prohibited and will result in disciplinary action up to and including termination. Any retaliation against employees who are suspected of submitting feedback is similarly prohibited. Employees who believe they have been retaliated against should report immediately to [specific contact]."
+            </blockquote>
+
+            <p><strong>6. Data Handling & Privacy</strong></p>
+            <ul>
+                <li>Where data is stored (geographic location)</li>
+                <li>Who has access (specific roles, not names)</li>
+                <li>How long feedback is retained</li>
+                <li>Compliance with GDPR, CCPA, and other regulations</li>
+                <li>Subpoena response protocol</li>
+            </ul>
+
+            <p><strong>7. Program Evaluation & Iteration</strong></p>
+            <p>Commit to reviewing the program quarterly and making adjustments based on usage data and employee feedback about the feedback system itself.</p>
+
+            <div class="bg-yellow-50 border-l-4 border-yellow-500 p-6 my-8">
+                <p class="font-semibold text-yellow-900 mb-2">⚖️ Legal Review Checklist:</p>
+                <p class="text-yellow-800 mb-3">Before finalizing your policy, have legal counsel review for:</p>
+                <ul class="text-yellow-800 space-y-1">
+                    <li>✓ Compliance with employment laws in all operating jurisdictions</li>
+                    <li>✓ Alignment with existing employee handbook policies</li>
+                    <li>✓ Protection against potential legal exposure</li>
+                    <li>✓ Clarity on mandatory reporting obligations (e.g., certain crimes must be reported)</li>
+                    <li>✓ Consistency with union agreements (if applicable)</li>
+                </ul>
+            </div>
+            </ul>
+
+            <h3>Phase 3: Communication & Launch Preparation (Weeks 5-6)</h3>
+
+            <p>The success of your feedback program hinges on trust. Poor communication = low adoption = program failure. Here's how to get it right:</p>
+
+            <h4>Week 5: Build Your Launch Campaign</h4>
+
+            <p><strong>Multi-Channel Communication Strategy:</strong></p>
+
+            <div class="bg-white border border-gray-200 rounded-lg p-6 my-6">
+                <table class="w-full">
+                    <thead>
+                        <tr class="bg-gray-50">
+                            <th class="py-2 px-3 text-left text-sm font-semibold">Channel</th>
+                            <th class="py-2 px-3 text-left text-sm font-semibold">Message</th>
+                            <th class="py-2 px-3 text-left text-sm font-semibold">Timing</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-sm">
+                        <tr class="border-t">
+                            <td class="py-3 px-3 font-medium">CEO Email</td>
+                            <td class="py-3 px-3">Personal commitment to transparency, why feedback matters, assurance of anonymity</td>
+                            <td class="py-3 px-3">2 weeks before launch</td>
+                        </tr>
+                        <tr class="border-t">
+                            <td class="py-3 px-3 font-medium">All-Hands Meeting</td>
+                            <td class="py-3 px-3">Demo the system live, address skepticism, Q&A session</td>
+                            <td class="py-3 px-3">1 week before launch</td>
+                        </tr>
+                        <tr class="border-t">
+                            <td class="py-3 px-3 font-medium">Manager Briefings</td>
+                            <td class="py-3 px-3">How to respond to criticism, retaliation policy, their role in success</td>
+                            <td class="py-3 px-3">1 week before launch</td>
+                        </tr>
+                        <tr class="border-t">
+                            <td class="py-3 px-3 font-medium">Employee FAQ</td>
+                            <td class="py-3 px-3">Address every possible concern about anonymity and retaliation</td>
+                            <td class="py-3 px-3">5 days before launch</td>
+                        </tr>
+                        <tr class="border-t">
+                            <td class="py-3 px-3 font-medium">Desk Drops/Posters</td>
+                            <td class="py-3 px-3">Physical reminder cards with QR code access</td>
+                            <td class="py-3 px-3">3 days before launch</td>
+                        </tr>
+                        <tr class="border-t">
+                            <td class="py-3 px-3 font-medium">Slack/Teams Announcement</td>
+                            <td class="py-3 px-3">Easy access link pinned in channels</td>
+                            <td class="py-3 px-3">Launch day</td>
+                        </tr>
+                        <tr class="border-t">
+                            <td class="py-3 px-3 font-medium">Email with Instructions</td>
+                            <td class="py-3 px-3">Step-by-step guide, video tutorial link</td>
+                            <td class="py-3 px-3">Launch day</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p><strong>Addressing Skepticism Head-On:</strong></p>
+
+            <p>Employees will be skeptical. Don't avoid tough questions—lean into them:</p>
+
+            <div class="bg-purple-50 rounded-lg p-6 my-6">
+                <p class="font-semibold text-purple-900 mb-4">Common Objections & How to Address Them:</p>
+                
+                <div class="space-y-4">
+                    <div>
+                        <p class="font-medium text-purple-900">"How do I know it's really anonymous?"</p>
+                        <p class="text-purple-800 text-sm mt-1"><strong>Response:</strong> "We selected a platform that doesn't require login and doesn't collect any identifying data. Our IT team has verified this. We're also happy to provide technical documentation if you want to see exactly how it works."</p>
+                    </div>
+                    
+                    <div>
+                        <p class="font-medium text-purple-900">"Will anything actually change, or is this just for show?"</p>
+                        <p class="text-purple-800 text-sm mt-1"><strong>Response:</strong> "We commit to providing monthly updates on actions taken based on your feedback. We'll track and publish response rates, not just collect feedback and ignore it."</p>
+                    </div>
+                    
+                    <div>
+                        <p class="font-medium text-purple-900">"What if my manager tries to figure out who said what?"</p>
+                        <p class="text-purple-800 text-sm mt-1"><strong>Response:</strong> "Any attempt to identify feedback submitters is a policy violation that will result in disciplinary action, up to and including termination. This is in writing and applies to all levels of management."</p>
+                    </div>
+                    
+                    <div>
+                        <p class="font-medium text-purple-900">"Why should I bother? Nothing ever changes here anyway."</p>
+                        <p class="text-purple-800 text-sm mt-1"><strong>Response:</strong> "You're right that in the past, feedback hasn't always led to change. That's exactly why we're implementing this system—to close that gap. We're committing to transparency about what can and can't be changed, and why."</p>
+                    </div>
+                </div>
+            </div>
+
+            <h4>Week 6: Pilot Test (Critical Step)</h4>
+
+            <p>Before company-wide launch, run a 1-week pilot with 30-50 employees representing different departments, levels, and demographics.</p>
+
+            <p><strong>Pilot Test Goals:</strong></p>
+            <ul>
+                <li><strong>Technical validation:</strong> Does everything work as expected?</li>
+                <li><strong>UX feedback:</strong> Is the system intuitive? Where do people get confused?</li>
+                <li><strong>Trust assessment:</strong> Do pilot users believe it's truly anonymous?</li>
+                <li><strong>Process testing:</strong> Can HR handle the volume and respond appropriately?</li>
+                <li><strong>Message refinement:</strong> What communication worked? What didn't?</li>
+            </ul>
+
+            <p><strong>Pilot Test Checklist:</strong></p>
             <ol>
-                <li>Evaluate 3-5 platforms using your criteria</li>
-                <li>Run pilot tests with each finalist</li>
-                <li>Select your platform and complete procurement</li>
-                <li>Configure the system (branding, categories, notifications)</li>
-                <li>Integrate with existing systems</li>
+                <li>Select diverse pilot group (don't just pick fans)</li>
+                <li>Brief pilot participants on goals and what you need from them</li>
+                <li>Ask them to submit at least 2-3 pieces of feedback (real or test)</li>
+                <li>Monitor response time and quality of HR responses</li>
+                <li>Conduct pilot debrief: anonymous survey + focus group</li>
+                <li>Make necessary adjustments before full rollout</li>
+                <li>Recruit pilot participants as program advocates</li>
             </ol>
 
-            <h3>Phase 3: Policy Development (Weeks 5-6)</h3>
+            <h3>Phase 4: Launch & Initial Momentum (Weeks 7-8)</h3>
 
-            <p>Create clear policies around:</p>
-            <ul>
-                <li><strong>Confidentiality guarantees:</strong> What you will and won't do with data</li>
-                <li><strong>Response timeframes:</strong> How quickly issues will be addressed</li>
-                <li><strong>Types of feedback accepted:</strong> What's appropriate vs. inappropriate</li>
-                <li><strong>Follow-up process:</strong> How you'll communicate actions taken</li>
-            </ul>
+            <h4>Week 7: Company-Wide Launch</h4>
 
-            <h3>Phase 4: Communication & Launch (Weeks 7-8)</h3>
+            <p><strong>Launch Day Sequence:</strong></p>
 
-            <p><strong>Pre-Launch Communication:</strong></p>
-            <ul>
-                <li>All-hands meeting explaining the program</li>
-                <li>Email campaign highlighting benefits and anonymity guarantees</li>
-                <li>Departmental Q&A sessions</li>
-                <li>Create FAQ document</li>
-            </ul>
+            <div class="bg-gradient-to-r from-indigo-50 to-blue-50 rounded-lg p-6 my-6">
+                <p class="font-bold mb-4">Hour-by-Hour Launch Plan:</p>
+                
+                <p class="font-semibold mb-2">9:00 AM - CEO Launch Email</p>
+                <p class="text-sm mb-4 text-gray-700">Personal message emphasizing importance, linking to system</p>
+                
+                <p class="font-semibold mb-2">9:30 AM - HR Team Monitoring Begins</p>
+                <p class="text-sm mb-4 text-gray-700">All hands on deck for first wave of feedback</p>
+                
+                <p class="font-semibold mb-2">10:00 AM - Slack/Teams Posts</p>
+                <p class="text-sm mb-4 text-gray-700">Pinned messages in all major channels with direct link</p>
+                
+                <p class="font-semibold mb-2">12:00 PM - Lunch & Learn Session</p>
+                <p class="text-sm mb-4 text-gray-700">Optional drop-in demo and Q&A</p>
+                
+                <p class="font-semibold mb-2">2:00 PM - Department Meetings</p>
+                <p class="text-sm mb-4 text-gray-700">Managers discuss program (without pressuring anyone)</p>
+                
+                <p class="font-semibold mb-2">4:00 PM - First Response Published</p>
+                <p class="text-sm mb-4 text-gray-700">Quick acknowledgment of first feedback received</p>
+                
+                <p class="font-semibold mb-2">End of Day - Success Metrics Check</p>
+                <p class="text-sm text-gray-700">Target: 15-25% of employees submitted feedback on Day 1</p>
+            </div>
 
-            <p><strong>Launch Day:</strong></p>
-            <ul>
-                <li>Send access instructions to all employees</li>
-                <li>Provide training resources (video tutorials, guides)</li>
-                <li>Executive endorsement message</li>
-                <li>Monitor for technical issues</li>
-            </ul>
+            <p><strong>Critical First Week Actions:</strong></p>
 
-            <h3>Phase 5: Ongoing Management (Weeks 9+)</h3>
+            <ol>
+                <li><strong>Respond FAST:</strong> Acknowledge every piece of feedback within 24 hours, even if just to say "received, investigating"</li>
+                <li><strong>Be visible:</strong> Post updates in common areas showing feedback is being read and acted upon</li>
+                <li><strong>Quick win:</strong> If possible, implement one small change based on early feedback and announce it publicly</li>
+                <li><strong>Address abuse immediately:</strong> If inappropriate content appears, remove it and remind everyone of guidelines</li>
+                <li><strong>Track metrics daily:</strong> Participation rate, sentiment trends, response times</li>
+            </ol>
 
-            <ul>
-                <li>Weekly review of new feedback</li>
-                <li>Monthly trend analysis</li>
-                <li>Quarterly reports to leadership</li>
-                <li>Regular communication about actions taken</li>
-            </ul>
+            <h4>Week 8: Sustaining Momentum</h4>
+
+            <p>The second week is where most programs lose steam. Prevent this with:</p>
+
+            <p><strong>The Feedback Loop Closure System:</strong></p>
+
+            <div class="bg-white border-2 border-indigo-200 rounded-lg p-6 my-6">
+                <p class="font-semibold text-lg mb-4">📢 Weekly Update Template:</p>
+                <p class="text-sm mb-4">(Send every Friday to entire company)</p>
+                
+                <div class="bg-gray-50 p-4 rounded text-sm">
+                    <p class="font-semibold mb-2">This Week in Feedback:</p>
+                    <ul class="space-y-2">
+                        <li>• <strong>Submissions received:</strong> 47 (23% participation rate)</li>
+                        <li>• <strong>Response rate:</strong> 100% acknowledged within 24 hours</li>
+                        <li>• <strong>Top themes:</strong> Remote work policies (18), meeting overload (12), career development (9)</li>
+                        <li>• <strong>Actions taken:</strong>
+                            <ul class="ml-6 mt-2">
+                                <li>- Reduced mandatory meetings by 30% starting next Monday</li>
+                                <li>- Formed task force to review remote work policy</li>
+                                <li>- Scheduled career development workshops for Q1</li>
+                            </ul>
+                        </li>
+                        <li>• <strong>Under investigation:</strong> 3 items related to office safety (timeline: resolution by Dec 20)</li>
+                        <li>• <strong>Ideas for future consideration:</strong> Flexible Fridays, wellness stipend expansion</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3>Phase 5: Ongoing Management (Week 9+)</h3>
+
+            <p><strong>Establish Sustainable Rhythms:</strong></p>
+
+            <table class="min-w-full bg-white border my-6">
+                <thead class="bg-gray-100">
+                    <tr>
+                        <th class="py-2 px-4 border-b text-left text-sm">Cadence</th>
+                        <th class="py-2 px-4 border-b text-left text-sm">Activity</th>
+                        <th class="py-2 px-4 border-b text-left text-sm">Owner</th>
+                    </tr>
+                </thead>
+                <tbody class="text-sm">
+                    <tr>
+                        <td class="py-2 px-4 border-b font-medium">Daily</td>
+                        <td class="py-2 px-4 border-b">Review new feedback, respond to urgent items</td>
+                        <td class="py-2 px-4 border-b">HR Lead</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4 border-b font-medium">Weekly</td>
+                        <td class="py-2 px-4 border-b">Compile & send progress update email</td>
+                        <td class="py-2 px-4 border-b">Communications Lead</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4 border-b font-medium">Biweekly</td>
+                        <td class="py-2 px-4 border-b">Implementation team meeting to review trends</td>
+                        <td class="py-2 px-4 border-b">HR Lead</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4 border-b font-medium">Monthly</td>
+                        <td class="py-2 px-4 border-b">Executive summary report with action items</td>
+                        <td class="py-2 px-4 border-b">HR Lead</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4 border-b font-medium">Quarterly</td>
+                        <td class="py-2 px-4 border-b">Program review: what's working, what needs adjustment</td>
+                        <td class="py-2 px-4 border-b">Executive Sponsor</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4 border-b font-medium">Annually</td>
+                        <td class="py-2 px-4 border-b">Comprehensive assessment & ROI calculation</td>
+                        <td class="py-2 px-4 border-b">HR Lead + Finance</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="bg-indigo-600 text-white rounded-xl p-8 my-12 text-center">
+                <h3 class="text-2xl font-bold mb-4">Ready to Implement Your Feedback Program?</h3>
+                <p class="text-lg mb-6 text-indigo-100">PulseFeed provides everything you need: platform, templates, and implementation support.</p>
+                <a href="../pages/contact.html" class="inline-block bg-white text-indigo-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+                    Start Free Trial →
+                </a>
+            </div>
 
             <h2 id="best-practices">5. Best Practices for Success</h2>
 

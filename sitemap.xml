@@ -36,6 +36,14 @@
     <priority>0.9</priority>
   </url>
 
+  <!-- Crisis Teams Landing Page -->
+  <url>
+    <loc>https://pulsefeed.software/pages/crisis-teams.html</loc>
+    <lastmod>2025-12-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
   <!-- Blog Homepage -->
   <url>
     <loc>https://pulsefeed.software/blog/</loc>

@@ -14,6 +14,9 @@
 
   <!-- Employee Portal -->
   <url>
+    <loc>https://pulsefeed.software/pages/government.html</loc>
+  </url>
+  <url>
     <loc>https://pulsefeed.software/pages/employee.html</loc>
     <lastmod>2025-12-09</lastmod>
     <changefreq>weekly</changefreq>

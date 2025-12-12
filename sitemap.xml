@@ -7,7 +7,7 @@
   <!-- Landing Page -->
   <url>
     <loc>https://pulsefeed.software/</loc>
-    <lastmod>2025-12-09</lastmod>
+    <lastmod>2025-12-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -60,6 +60,12 @@
   </url>
   <url>
     <loc>https://pulsefeed.software/pages/anonymous-feedback-platform.html</loc>
+  </url>
+  <url>
+    <loc>https://pulsefeed.software/pages/resources.html</loc>
+    <lastmod>2025-12-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://pulsefeed.software/pages/enterprise.html</loc>

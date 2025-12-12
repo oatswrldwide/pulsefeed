@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detect Burnout Early | Healthcare Team Wellbeing Guide</title>
+  <meta name="description" content="Learn how hospitals can detect burnout early in nurses, doctors, and clinical teams using anonymous feedback, sentiment tracking, and real-time insights." />
+  <meta name="keywords" content="detect burnout healthcare, nurse burnout early signs, hospital wellbeing, anonymous feedback healthcare, sentiment tracking healthcare, burnout prevention hospitals" />
+
+  <meta property="og:title" content="Detect Burnout Early in Healthcare Teams" />
+  <meta property="og:description" content="Identify emotional strain and workload pressure early with anonymous insights and real-time sentiment tracking." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://pulsefeed.software/pages/burnout-detection.html" />
+
+  <link rel="icon" type="image/svg+xml" href="../assets/resources/pulse-icon.svg" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7TNSXLSCXP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);} 
+    gtag('js', new Date());
+    gtag('config', 'G-7TNSXLSCXP');
+  </script>
+</head>
+<body class="bg-gray-50">
+  <!-- Nav -->
+  <nav class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <a href="../index.html" class="text-2xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">PulseFeed</a>
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="../index.html#features" class="text-gray-700 hover:text-indigo-600 transition">Features</a>
+          <a href="../index.html#pricing" class="text-gray-700 hover:text-indigo-600 transition">Pricing</a>
+          <a href="/blog/" class="text-gray-700 hover:text-indigo-600 transition">Blog</a>
+          <a href="../pages/contact.html" class="bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700 transition">Get Started</a>
+        </div>
+        <div class="md:hidden">
+          <button id="mobileMenuBtn" class="text-gray-700 hover:text-indigo-600 focus:outline-none">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden bg-white border-t">
+      <div class="px-4 pt-2 pb-4 space-y-2">
+        <a href="../index.html#features" class="block py-2 text-gray-700 hover:text-indigo-600">Features</a>
+        <a href="../index.html#pricing" class="block py-2 text-gray-700 hover:text-indigo-600">Pricing</a>
+        <a href="/blog/" class="block py-2 text-gray-700 hover:text-indigo-600">Blog</a>
+        <a href="../pages/contact.html" class="block py-2 text-indigo-600 font-medium">Get Started</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-500 text-white py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-5xl md:text-6xl font-bold mb-6">Detect Burnout Early in Healthcare Teams</h1>
+      <p class="text-xl md:text-2xl mb-8 text-indigo-100 max-w-3xl mx-auto">Identify emotional strain, workload pressure, and early burnout signals before they turn into turnover, errors, or patient-care risks.</p>
+      <div class="flex justify-center gap-4">
+        <a href="../index.html#pricing" class="bg-white text-indigo-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">Start Free Trial</a>
+        <a href="../pages/contact.html" class="bg-indigo-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-indigo-800 transition">Talk to Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sub-hero -->
+  <section class="py-14 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">Spot burnout before it becomes a crisis</h2>
+        <p class="text-gray-700 mb-6">Burnout rarely appears suddenly — it builds quietly and dangerously. In healthcare, where emotional labour and high pressure are constant, early detection is essential. PulseFeed gives hospitals real-time, anonymous insights into staff wellbeing, allowing leadership to intervene before burnout becomes a crisis.</p>
+      </div>
+      <div class="bg-gray-50 rounded-xl p-6 shadow-sm">
+        <h3 class="text-lg font-semibold mb-3 text-gray-900">Why early detection matters</h3>
+        <ul class="space-y-2 text-gray-700">
+          <li>Patient outcomes, communication, and teamwork all depend on healthy teams.</li>
+          <li>Early signals prevent turnover, errors, and safety incidents.</li>
+          <li>Burnout is predictable when you watch the right patterns.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Early signs -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold mb-10 text-gray-900">The Hidden Early Signs of Burnout in Healthcare Teams</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-gray-700">
+        <div class="bg-white rounded-xl shadow p-6">
+          <h3 class="font-semibold text-gray-900 mb-2">Emotional exhaustion</h3>
+          <p>Feeling drained, overwhelmed, detached, or numb — the earliest warning sign.</p>
+        </div>
+        <div class="bg-white rounded-xl shadow p-6">
+          <h3 class="font-semibold text-gray-900 mb-2">Increased irritability or conflict</h3>
+          <p>Small frustrations escalate quickly; patience drops under stress.</p>
+        </div>
+        <div class="bg-white rounded-xl shadow p-6">
+          <h3 class="font-semibold text-gray-900 mb-2">Withdrawal from teamwork</h3>
+          <p>Reduced collaboration, discussion, and willingness to help — a silent alarm.</p>
+        </div>
+        <div class="bg-white rounded-xl shadow p-6">
+          <h3 class="font-semibold text-gray-900 mb-2">Reduced communication clarity</h3>
+          <p>Tone, accuracy, and attention to detail slip, increasing clinical risk.</p>
+        </div>
+        <div class="bg-white rounded-xl shadow p-6">
+          <h3 class="font-semibold text-gray-900 mb-2">More sick days</h3>
+          <p>Headaches, fatigue, stress-related illness, and last-minute absences rise.</p>
+        </div>
+        <div class="bg-white rounded-xl shadow p-6">
+          <h3 class="font-semibold text-gray-900 mb-2">Decline in empathy</h3>
+          <p>Less patience and emotional availability; more task-focused interactions.</p>
+        </div>
+        <div class="bg-white rounded-xl shadow p-6 md:col-span-2 lg:col-span-3">
+          <h3 class="font-semibold text-gray-900 mb-2">Feelings of helplessness</h3>
+          <p>Statements like “Nothing will change” or “We’re always short-staffed” signal burnout red flags.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why undetected -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold mb-6 text-gray-900">Why Burnout Goes Undetected in Hospitals</h2>
+      <p class="text-gray-700 mb-6 max-w-3xl">Healthcare culture often teaches staff to push through and prioritize patients over themselves. Burnout stays invisible when people fear judgment or retaliation, or assume nothing will change.</p>
+      <div class="grid md:grid-cols-2 gap-8 text-gray-700">
+        <ul class="space-y-3">
+          <li>Fear of retaliation or being seen as weak.</li>
+          <li>Worries about losing opportunities or burdening colleagues.</li>
+          <li>Past experiences of being ignored.</li>
+        </ul>
+        <ul class="space-y-3">
+          <li>Norms of “just cope” and stay silent.</li>
+          <li>Leadership that seems distant or defensive.</li>
+          <li>Emotional exhaustion that drains the energy to advocate.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Strategies -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold mb-10 text-gray-900">7 Strategies to Detect Burnout Early in Healthcare Teams</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-gray-700">
+        <div class="bg-white rounded-xl shadow p-6">
+          <h3 class="font-semibold text-gray-900 mb-2">Anonymous feedback</h3>
+          <p>Surface emotional strain, workload pressure, and conflict without fear.</p>
+        </div>
+        <div class="bg-white rounded-xl shadow p-6">
+          <h3 class="font-semibold text-gray-900 mb-2">Track sentiment trends</h3>
+          <p>Monitor emotional tone, stress indicators, and morale shifts over time.</p>
+        </div>
+        <div class="bg-white rounded-xl shadow p-6">
+          <h3 class="font-semibold text-gray-900 mb-2">Monitor unit differences</h3>
+          <p>ICU, ER, maternity, and wards experience burnout differently — see the patterns.</p>
+        </div>
+        <div class="bg-white rounded-xl shadow p-6">
+          <h3 class="font-semibold text-gray-900 mb-2">Spot workload pressure points</h3>
+          <p>Identify unsafe ratios, overtime, and unfair shifts before they trigger burnout.</p>
+        </div>
+        <div class="bg-white rounded-xl shadow p-6">
+          <h3 class="font-semibold text-gray-900 mb-2">Encourage psychological safety</h3>
+          <p>When people feel safe, they report issues earlier and more honestly.</p>
+        </div>
+        <div class="bg-white rounded-xl shadow p-6">
+          <h3 class="font-semibold text-gray-900 mb-2">Train leaders to see signals</h3>
+          <p>Coach leaders to watch for irritability, withdrawal, exhaustion, and mistakes.</p>
+        </div>
+        <div class="bg-white rounded-xl shadow p-6 md:col-span-2 lg:col-span-3">
+          <h3 class="font-semibold text-gray-900 mb-2">Close the feedback loop</h3>
+          <p>Respond quickly and visibly so staff continue to share early warnings.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PulseFeed value -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold mb-6 text-gray-900">How PulseFeed Helps Hospitals Detect Burnout Early</h2>
+      <p class="text-gray-700 mb-8 max-w-3xl">PulseFeed is purpose-built for high-pressure healthcare settings, combining anonymous reporting, AI-driven signals, and secure workflows so you can see burnout risks early and act fast.</p>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-gray-700">
+        <div class="bg-gray-50 rounded-xl p-6">
+          <h3 class="font-semibold text-gray-900 mb-2">100% anonymous reporting</h3>
+          <p>No IP tracking or device fingerprinting; staff share honestly without fear.</p>
+        </div>
+        <div class="bg-gray-50 rounded-xl p-6">
+          <h3 class="font-semibold text-gray-900 mb-2">Burnout-risk detection</h3>
+          <p>AI flags language and patterns that indicate stress and emotional strain.</p>
+        </div>
+        <div class="bg-gray-50 rounded-xl p-6">
+          <h3 class="font-semibold text-gray-900 mb-2">Real-time sentiment</h3>
+          <p>Track morale across units and shifts with clear trendlines.</p>
+        </div>
+        <div class="bg-gray-50 rounded-xl p-6">
+          <h3 class="font-semibold text-gray-900 mb-2">Shift-level insights</h3>
+          <p>Compare nights, weekends, and high-volume periods to target support.</p>
+        </div>
+        <div class="bg-gray-50 rounded-xl p-6">
+          <h3 class="font-semibold text-gray-900 mb-2">Department dashboards</h3>
+          <p>Give leaders exportable reports for fast decisions.</p>
+        </div>
+        <div class="bg-gray-50 rounded-xl p-6">
+          <h3 class="font-semibold text-gray-900 mb-2">Psych safety indicators</h3>
+          <p>Monitor trust and candor so staff feel safe raising concerns early.</p>
+        </div>
+        <div class="bg-gray-50 rounded-xl p-6">
+          <h3 class="font-semibold text-gray-900 mb-2">Mobile-friendly</h3>
+          <p>Frontline teams share feedback securely from any device.</p>
+        </div>
+        <div class="bg-gray-50 rounded-xl p-6">
+          <h3 class="font-semibold text-gray-900 mb-2">Secure & SOC 2 Type II</h3>
+          <p>Encryption in transit and at rest with audited controls for compliance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Use cases -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold mb-6 text-gray-900">Real-World Use Cases</h2>
+      <div class="grid md:grid-cols-2 gap-8 text-gray-700">
+        <ul class="space-y-3">
+          <li>Nurses report emotional exhaustion anonymously so leadership sees patterns early.</li>
+          <li>Doctors surface workload concerns without hierarchy barriers.</li>
+          <li>Teams highlight early signs of conflict before they escalate.</li>
+        </ul>
+        <ul class="space-y-3">
+          <li>Leadership monitors burnout risk across units and shifts.</li>
+          <li>Patterns reveal where support is strong — and where to intervene.</li>
+          <li>Anonymous channels increase candor during high-change periods.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-500 text-white text-center">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-4xl font-bold mb-4">Detect burnout early — before it becomes a crisis</h2>
+      <p class="text-indigo-100 mb-8">See how PulseFeed helps hospitals protect staff wellbeing and patient safety with anonymous insights and real-time trends.</p>
+      <div class="flex justify-center gap-4">
+        <a href="../index.html#pricing" class="bg-white text-indigo-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">Start Free Trial</a>
+        <a href="../pages/contact.html" class="bg-indigo-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-indigo-800 transition">Contact Sales</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div>
+          <h3 class="text-2xl font-bold mb-4 bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">PulseFeed</h3>
+          <p class="text-gray-400">Anonymous employee feedback made simple.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Product</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="../index.html#features" class="hover:text-white transition">Features</a></li>
+            <li><a href="../index.html#pricing" class="hover:text-white transition">Pricing</a></li>
+            <li><a href="../pages/competitors.html" class="hover:text-white transition">Comparisons</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Resources</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="/blog/" class="hover:text-white transition">Blog</a></li>
+            <li><a href="../pages/contact.html" class="hover:text-white transition">Contact</a></li>
+            <li><a href="../pages/crisis-teams.html" class="hover:text-white transition">Crisis Teams</a></li>
+            <li><a href="../pages/white-label.html" class="hover:text-white transition">White-label Partnerships</a></li>
+            <li><a href="../pages/healthcare.html" class="hover:text-white transition">Healthcare &amp; Hospitals</a></li>
+            <li><a href="../pages/government.html" class="hover:text-white transition">Government &amp; Public Sector</a></li>
+            <li><a href="../pages/enterprise.html" class="hover:text-white transition">Enterprise</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Legal</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="#" class="hover:text-white transition">Privacy Policy</a></li>
+            <li><a href="#" class="hover:text-white transition">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+        <p>&copy; 2025 PulseFeed. All rights reserved. | <a href="mailto:info@pulsefeed.software" class="hover:text-white transition">info@pulsefeed.software</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileMenuBtn && mobileMenuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+
+    // Track CTA clicks
+    document.querySelectorAll('a[href*="#pricing"]').forEach(el => {
+      el.addEventListener('click', () => gtag('event', 'cta_click', { label: 'burnout_start_trial', page: 'burnout_detection' }));
+    });
+    document.querySelectorAll('a[href*=' + '\\' + 'contact.html' + ']').forEach(el => {
+      el.addEventListener('click', () => gtag('event', 'cta_click', { label: 'burnout_contact_sales', page: 'burnout_detection' }));
+    });
+  </script>
+</body>
+</html>
